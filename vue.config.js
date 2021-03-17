@@ -1,3 +1,3 @@
 module.exports={
-    publicPath:'/EME-SPA/'
+    publicPath:'/eme-static/'
 }
