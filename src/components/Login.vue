@@ -58,6 +58,9 @@
             </div>
         </div>
     </section>
+    <section class="ict-logo-footer">
+        <img src="../assets/img/ict-logo.svg" alt="">
+    </section>
     <section class="footer-logo">
         <img src="img/ict-logo.svg" alt="" width="">
     </section>

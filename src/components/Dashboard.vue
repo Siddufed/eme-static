@@ -10,7 +10,12 @@
             </div>
       
     </div>
-
+     <section class="ict-logo-footer">
+        <img src="../assets/img/ict-logo.svg" alt="">
+    </section>
+  <div class="chat-icon">
+      <img src="../assets/img/chat.svg" alt="" width="75" height="75">
+  </div>
 </div>
 </template>
 
@@ -34,5 +39,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style>
-
+.chat-icon{
+   position: fixed;
+    bottom: 100px;
+    /* width: 100px; */
+    bottom: 19px;
+    right: 25px;
+}
 </style>

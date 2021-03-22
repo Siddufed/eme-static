@@ -4,15 +4,82 @@
         <img src="../assets/img/eme-sidebar-logo.png" alt="" width="80">
     </div>
     <div class="side-barlist">
-        <ul class="list-style-none ">
-            <li class="d-flex align-items-center">
-                <img src="../assets/img/dashboard.svg" alt="" class="mr-3">
-                Dashboard</li>
-            <li class="d-flex align-items-center"> <img src="../assets/img/residentail.svg" alt="" class="mr-3">Residential</li>
+        <div class="list-style-none ">
+           
+                <router-link to="/dashboard" tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                <div class="sidebaractive"></div>
+                    <img src="../assets/img/dashboard.svg" alt="" class="mr-3"/>
+                Dashboard
+                </router-link>
+              
+               
+                <router-link to="/residential" tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                   <img src="../assets/img/residentail.svg" alt="" class="mr-3"/>
+                Residential
+                </router-link>
+              
+             
+                <router-link to="/business" tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/customer-2.svg" alt="" class="mr-3"/>
+                Business Customers
+                </router-link>
+              
+              
+                <router-link to="/contractor" tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/contractor.svg" alt="" class="mr-3"/>
+                Contractor
+                </router-link>
+               
+                
+                <router-link to="/permission"   tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/folder.svg" alt="" class="mr-3"/>
+                Permission
+                </router-link>
+                <router-link to="/permission"   tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/nav-icon/left-inprogress.svg" alt="" class="mr-3"/>
+                In Progress
+                </router-link>
+                <router-link to="/permission"   tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/nav-icon/left-qutation.svg" alt="" class="mr-3"/>
+                Quotation
+                </router-link>
+                 <router-link to="/permission"   tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/nav-icon/left-dollor.svg" alt="" class="mr-3"/>
+                Payments
+                </router-link>
+                <router-link to="/permission"   tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/nav-icon/left-report.svg" alt="" class="mr-3" style="width: 18px"/>
+                Reports
+                </router-link>
+                <router-link to="/permission"   tag="li"  class-active="active" class="mb-4 d-flex align-items-center list-side">
+                 <div class="sidebaractive"></div>
+                    <img src="../assets/img/nav-icon/left-enqury.svg" alt="" class="mr-3" style="width: 18px"/>
+                Enquiry
+                </router-link>
+
+               <!-- <div v-if="currentRouteName === '/permission'"></div> -->
+                
+                
+               
+            <!-- <li class="d-flex align-items-center"> 
+                <img src="../assets/img/residentail.svg" alt="" class="mr-3">Residential</li>
             <li class="d-flex align-items-center"> <img src="../assets/img/customer-2.svg" alt="" class="mr-3">Business Customers</li>
-            <li class="d-flex align-items-center"> <img src="../assets/img/contractor.svg" alt="" class="mr-3">Contractor</li>
-            <li class="d-flex align-items-center"> <img src="../assets/img/folder.svg" alt="" class="mr-3">Permission</li>
-        </ul>
+            <li class="d-flex align-items-center"> <img src="../assets/img/contractor.svg" alt="" class="mr-3">Contractor</li> -->
+            <!-- <li class="d-flex align-items-center">
+                <router-link to="/permission" tag="li"  class-active="active">
+                    <img src="../assets/img/folder.svg" alt="" class="mr-3">
+                  Permission
+                </router-link>
+                </li> -->
+        </div>
     </div>
 </div>
 </template>
@@ -20,6 +87,17 @@
 <script>
 export default {
     name: 'sidebar',
+    data(){
+        return{
+            
+        }
+        
+    },
+    computed: {
+    currentRouteName() {
+        return this.$route.path;
+    }
+}
 
 }
 </script>
@@ -38,15 +116,34 @@ export default {
     margin-top: 40px;
 }
 
-.side-barlist li {
+.side-barlist .list-side {
     padding: 7px 5px 7px 40px;
     border-top-right-radius: 20px;
     background: white;
     margin-bottom: 20px;
     border-bottom-right-radius: 20px;
     color: #004A79;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-
+.list-side li{
+    list-style-type: none;
+    position: relative;
+    overflow: hidden;
+}
+.side-barlist li:before{
+    
+}
+.side-barlist .list-side.router-link-active .sidebaractive{
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: red;
+    content:'';
+}
 .side-barlist li img {
     width: 22px;
 }

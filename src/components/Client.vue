@@ -175,15 +175,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style>
-.circle{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FFE9E9;
-    margin-right: 10px;
-    cursor: pointer;
-}
+
 </style>

@@ -12,42 +12,57 @@
         <div class="col-5 text-right">
             <div class="d-flex d-flex justify-content-end mr-5">
                 <div class="circle-top">
-                    <img src="../assets/img/dashboard.svg" alt="" width="20">
+                    <img src="../assets/img/refresh.svg" alt="" width="20">
                 </div>
                 <div class="circle-top">
-                    <img src="../assets/img/dashboard.svg" alt="" width="20">
+                    <img src="../assets/img/bell.svg" alt="" width="20">
                 </div>
-               
-                    <div class="dropdown-custom d-flex align-items-center">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="avatar avatar-online"><img src="../assets/img/dashboard.svg" alt="avatar" class="mr-3"></span>
-                          <span class="mr-2">John Doe</span>
-                          
-                        </div>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another </a>
-                            <a class="dropdown-item" href="#">Something </a>
-                        </div>
+
+                <div class="dropdown-custom d-flex align-items-center">
+                    <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar avatar-online"><img src="../assets/img/user.jpg" alt="avatar" class="mr-3" width="30" height="30" style="border-radius: 50%"></span>
+                        <span class="mr-2">John Doe</span>
+
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">
+                            <font-awesome-icon :icon="['fa', 'user']" class="mr-1"/> My Profile</a>
+                        <a class="dropdown-item" href="#"> <font-awesome-icon :icon="['fa', 'cog']" class="mr-1"/> Settings </a>
+                        <a class="dropdown-item" href="#"><font-awesome-icon :icon="['fa', 'sign-out-alt']" class="mr-1" />  Logout </a>
+                        <a class="dropdown-item" href="#">Switch to ERP <span>
+                                <el-switch v-model="value2" active-color="#004a79" inactive-color="" width="32" height="23">
+                                </el-switch>
+                            </span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Actual search box -->
-
 </div>
+<!-- Actual search box -->
+
+
 </template>
 
 <script>
 export default {
     name: 'topbar',
+    data(){
+        return{
+            
+        }
+        
+    },
+    computed: {
+    // currentRouteName() {
+    //     return this.$route.path;
+    // }
+}
 
 }
 </script>
 
 <style>
-
 .topbar {
     margin: 20px 0px;
 }
@@ -120,16 +135,26 @@ export default {
     color: #004A79;
     opacity: 0.5;
 }
+
 .dropdown-custom {
     padding: 5px 10px;
     border-radius: 5px;
     background: white;
 }
-.dropdown-menu.show{
+
+.dropdown-menu.show {
     display: block;
-    width: 128px;
-    left: -8px!important;
-    top: 8px!important;
+    width: 145px;
+    left: -8px !important;
+    top: 8px !important;
     border-radius: 7px;
 }
+</style>
+<style scoped>
+    .dropdown-item{
+        font-size: 12px;
+    }
+    .dropdown-item svg{
+        opacity: .7;
+    }
 </style>

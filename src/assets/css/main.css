@@ -770,3 +770,21 @@ padding: 8px;
     filter: invert(1);
     opacity: .2;
 }
+
+.circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFE9E9;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.ict-logo-footer{
+  position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    left: 50px;
+}
