@@ -10,6 +10,8 @@ import Supervisor from '@/components/Supervisor'
 import Account from '@/components/Accounts'
 import Client from '@/components/Client'
 import Permission from '@/components/Permission'
+import Calander from '@/components/Calander'
+import Task from '@/components/Task'
 
 Vue.use(Router)
 
@@ -64,6 +66,16 @@ export default new Router({
           path: '/permission',
           name: 'Permission',
           component: Permission
+        },
+        {
+          path: '/calander',
+          name: 'Calander',
+          component: Calander
+        },
+        {
+          path: '/task',
+          name: 'Task',
+          component: Task
         },
       ]
     },
