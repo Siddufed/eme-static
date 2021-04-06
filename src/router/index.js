@@ -13,6 +13,7 @@ import Permission from '@/components/Permission'
 import Calander from '@/components/Calander'
 import Task from '@/components/Task'
 import User from '@/components/User'
+import Enquiry from '@/components/Enquiry'
 
 Vue.use(Router)
 
@@ -82,6 +83,11 @@ export default new Router({
           path: '/user',
           name: 'User',
           component: User
+        },
+        {
+          path: '/enquiry',
+          name: 'Enquiry',
+          component: Enquiry
         },
       ]
     },

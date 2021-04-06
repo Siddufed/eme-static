@@ -622,14 +622,17 @@ html {
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
+    font-size: 18px;
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: white;
+    font-size: 18px;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
+    font-size: 18px;
   }
 
   h1,h2,h3,h4,h5,h6,button,p,span,strong,tr,td{
@@ -839,4 +842,230 @@ padding: 8px;
 .custom-inp-pass input:focus{
   border: 1px solid white;
   outline: none;
+}
+
+
+ /* user page css starts  */
+ .user-table-outer td>span.active {
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #00cc7529;
+  color: #00CC75;
+  text-transform: uppercase;
+}
+
+.user-table-outer td>span.inactive {
+  color: #DF6267;
+  font-size: 12px;
+  background: #FFE9E9;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.user-table-outer td>span{
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.user-table-outer td>span.external{
+  color:#EDAC28;
+  background: #FFF7E8;
+}
+.user-table-outer td>span.builder{
+  color: #DF62D1;
+  background: #FFEFFD;
+}
+.user-table-outer td>span.approval{
+  color: #2B6CCC;
+  background: #E6F0FF;
+}
+.user-table-outer td>span.forward{
+  color:#3D0079;
+  background: #F7EFFF;
+}
+.user-table-outer table th {
+  background: #F7F7F7;
+  border-top: 0px;
+  border-bottom: 0px;
+  color: #7BA1BB;
+}
+
+.user-table-outer table td {
+  border-top: 0px;
+  background: white;
+  font-weight: 400;
+  border-bottom: 1.5px solid #edededb3;
+  padding: 0.95rem 0.75rem;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFE9E9;
+  margin-right: 10px;
+}
+
+.bg-white-users {
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px !important;
+}
+
+.bg-grey-box {
+  background-color: #ffffff;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #C3C3C3;
+  margin-bottom: 10px;
+}
+
+.bg-grey-box h4 {
+  color: #004A79;
+}
+
+.d-block {
+  opacity: .7;
+  padding-top: 10px;
+}
+
+.el-select {
+  display: block;
+}
+
+.title-r {
+  color: #1B6592;
+}
+
+p.d-block {
+  margin-bottom: 5px;
+}
+
+.btn-bg.el-button {
+  background-color: #004A79;
+}
+
+.el-button--danger.is-plain {
+  background: transparent;
+}
+
+.circle-back-arrow {
+  color: #DF6267;
+  background: #df626726;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.circle-alpha {
+  color: #fff;
+  background: #5D6F88 0% 0% no-repeat padding-box;
+  padding: 5px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.circle-alpha span {
+  font-size: 17px;
+  position: relative;
+  left: 4px;
+  top: -2px;
+}
+
+.dt-clr {
+  color: #A7A7A7;
+}
+
+.row {
+  margin: 0px;
+}
+
+.app-wrapper {}
+
+.el-tabs__item {
+  height: 55px;
+  font-size: 20px;
+}
+
+.el-tabs__item.is-active {
+  color: #1B6592;
+}
+
+.el-tabs__active-bar {
+  background-color: #1B6592;
+}
+
+.el-tabs__item:hover {
+  color: #1B6592;
+}
+
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+
+/* .avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
+} */
+.el-upload-dragger {
+  width: 340px;
+}
+
+.contract-card {
+  border: 1px solid #C3C3C3;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background: #1B6592;
+}
+.el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 100%;
+}
+
+.total{
+  position: absolute;
+    width: 100%;
+    left: 0px;
+    padding: 20px 50px;
+    background: #E6F0FF;
+    bottom: -25px;
+    color: #5D6F88;
+}
+.el-upload-dragger{
+  width: 100%;
+}
+.el-tabs__content{
+  min-height: 175px;
+}
+.custom-modal .el-dialog{
+  border-radius: 15px;
+  border: 2px solid #004A79;
+  box-shadow: 0 0px 0px rgba(0,0,0,.0);
 }
