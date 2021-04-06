@@ -12,6 +12,7 @@ import Client from '@/components/Client'
 import Permission from '@/components/Permission'
 import Calander from '@/components/Calander'
 import Task from '@/components/Task'
+import User from '@/components/User'
 
 Vue.use(Router)
 
@@ -76,6 +77,11 @@ export default new Router({
           path: '/task',
           name: 'Task',
           component: Task
+        },
+        {
+          path: '/user',
+          name: 'User',
+          component: User
         },
       ]
     },

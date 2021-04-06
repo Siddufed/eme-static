@@ -619,6 +619,18 @@ html {
     margin: 0px;
     padding: 0px;
   }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
 
   h1,h2,h3,h4,h5,h6,button,p,span,strong,tr,td{
     font-family: 'Poppins', sans-serif;
@@ -640,6 +652,20 @@ html {
     padding: 20px 20px;
     margin: 10px 0px;
     border-radius: 20px;
+  }
+
+  /* common button css and common class css */
+
+  .el-button--danger{
+    color: #FFF;
+    background-color: #DF6267;
+    border-color: #DF6267;
+  }
+  .el-input__inner{
+    border-radius: 7px;
+    border: 1px solid #C3C3C3;
+    height: 50px;
+    line-height: 40px;
   }
   /* ==========================================================================
     login screen css sarts here
@@ -725,7 +751,7 @@ html {
 
 .mini-wrapper{
   padding: 20px;
-    background: white;
+    background: #f5f8fc;
     border-top-left-radius: 40px;
     min-height: 90vh;
 }
@@ -787,4 +813,30 @@ padding: 8px;
     z-index: 2;
     bottom: 20px;
     left: 50px;
+}
+.custom-inp-pass{
+  position: relative;
+    overflow: hidden;
+}
+
+.custom-inp-pass input{
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+
+}
+.custom-inp-pass .toggle-eye{
+  position: absolute;
+    right: 10px;
+    top: 12px;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+.custom-inp-pass input:focus{
+  border: 1px solid white;
+  outline: none;
 }
