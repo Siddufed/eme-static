@@ -214,10 +214,10 @@ a:hover {
 }
 
 .el-select .el-input.is-focus .el-input__inner {
-    border-color: white;
+    border-color: #d1cccc;
 }
 
 .el-select .el-input__inner:focus {
-    border-color: white;
+    border-color: #d1cccc;
 }
 </style>

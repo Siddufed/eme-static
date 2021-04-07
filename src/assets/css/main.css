@@ -1069,3 +1069,8 @@ p.d-block {
   border: 2px solid #004A79;
   box-shadow: 0 0px 0px rgba(0,0,0,.0);
 }
+
+.el-upload{
+  display:block;
+  margin-bottom: 10px;
+}

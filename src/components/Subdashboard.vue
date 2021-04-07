@@ -3,7 +3,7 @@
     <div v-if="!addForm">
         <div class="d-flex justify-content-between">
             <h3 class="text-left text-blue ">Dashboard</h3>
-            <el-button icon="el-icon-plus" type="danger" @click="hideshow">Add New</el-button>
+            <!-- <el-button icon="el-icon-plus" type="danger" @click="hideshow">Add New</el-button> -->
         </div>
         <div class="mt-5"></div>
         <div class="dashboard-cards">
